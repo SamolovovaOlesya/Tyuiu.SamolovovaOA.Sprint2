@@ -7,8 +7,9 @@ namespace Tyuiu.SamolovovaOA.Sprint2.Task5.V7.Lib
     {
         public string FindMonthName(int startYear, int n)
         {
+            int caseIndex = (n % 12) + 1;
             string res = string.Empty;
-            switch (n)
+            switch (caseIndex)
             {
                 case 1:
                     res = "Январь"; 
